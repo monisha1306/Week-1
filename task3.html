@@ -1,0 +1,145 @@
+
+
+def anagrams(str1,str2):
+  str1=str1.replace(" ", "").lower()
+  str2=str2.replace(" ", "").lower()
+
+  return sorted(str1) == sorted(str2)
+
+str1=input("Enter the First String: ")
+str2=input("Enter the Second String: ")
+
+if anagrams(str1, str2):
+  print("The strings are anagrams.")
+else:
+  print("The strings are not anagrams.")
+
+
+
+num=int(input("Enter the number: "))
+if num > 1:
+  for i in range(2,num):
+    if num % i == 0:
+      print(f"{num} is not a prime number")
+      break
+    
+    else:
+      print(f"{num} is a prime number")
+else:
+  print(f"{num} is not a prime number")
+ 
+
+def most_frequent_element(lst):
+    max_count = 0
+    most_frequent = None
+
+    for item in lst:
+        count = lst.count(item)
+        if count > max_count:
+            max_count = count
+            most_frequent = item
+
+    return most_frequent
+
+my_list = [1, 3, 2, 1, 4, 1, 3, 2, 3, 3]
+print("Most frequent element:", most_frequent_element(my_list))
+
+
+
+users = [
+    {"id": 1, "name": "Alice", "email": "alice@example.com"},
+    {"id": 2, "name": "Bob", "email": "bob@example.com"},
+]
+
+
+def add_user(new_user):
+    users.append(new_user)
+    print(f"User added: {new_user}")
+
+def get_user_by_id(user_id):
+    for user in users:
+        if user["id"] == user_id:
+            return user
+    return None
+
+def update_user(user_id, updated_data):
+    for user in users:
+        if user["id"] == user_id:
+            user.update(updated_data)
+            print(f"User updated: {user}")
+            return
+    print("User not found.")
+
+def delete_user(user_id):
+    for user in users:
+        if user["id"] == user_id:
+            users.remove(user)
+            print(f"User deleted: {user}")
+            return
+    print("User not found.")
+
+
+print("Initial Users:", users)
+
+add_user({"id": 3, "name": "Charlie", "email": "charlie@example.com"})
+print("After Adding:", users)
+
+print("Retrieve ID 2:", get_user_by_id(2))
+
+update_user(2, {"name": "Bobby", "email": "bobby@example.com"})
+print("After Update:", users)
+
+delete_user(1)
+print("After Deletion:", users)
+
+
+def is_valid_email(email):
+    if "@" not in email or "." not in email:
+        return False
+    
+    try:
+        username, domain = email.split("@")
+        if not username or not domain:
+            return False
+        if "." not in domain:
+            return False
+        domain_name, extension = domain.rsplit(".", 1)
+        if not domain_name or not extension:
+            return False
+        return True
+    except ValueError:
+        return False
+
+print(is_valid_email("user@domain.com")) 
+print(is_valid_email("user@domain"))      
+print(is_valid_email("user@.com"))        
+
+
+
+import hashlib
+
+user_db = {}
+def hash_password(password):
+    return hashlib.sha256(password.encode()).hexdigest()
+
+def register(username, password):
+    if username in user_db:
+        print("User already exists.")
+    else:
+        hashed = hash_password(password)
+        user_db[username] = hashed
+        print("Created new user.")
+
+def login(username, password):
+    hashed = hash_password(password)
+    stored_hash = user_db.get(username)
+    
+    if stored_hash == hashed:
+        print("Login Successful")
+    else:
+        print("Invalid username or password.")
+
+register("john", "mypassword")        
+login("john", "mypassword")          
+login("john", "wrongpassword")        
+register("john", "anotherpassword")   

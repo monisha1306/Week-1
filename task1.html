@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      height: 30vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;  
+      align-items: left; 
+      background-color: #eeffff; 
+    }
+    h1 {
+      margin-bottom: 50px;
+     
+    }
+    
+    #first{
+      width:70%;
+      border-collapse:collapse;
+      background-color:rgb(22, 180, 180);
+  
+    }
+    #first th,td{
+      border:1px solid white;
+      padding: 10px;
+      text-align:left;
+    }
+    #first th{
+      font-weight: bold;
+    }
+    .box{
+      border:1px solid black;
+     
+      padding: 15px;
+      width:30%;
+      justify-content: center; 
+      align-items: center; 
+      margin: 2px auto;
+      background-color: white;
+    }
+    .link-box{
+      border: 1px solid black;
+      box-shadow: inset 0 5px 5px -5px rgba(0, 0, 0, 0.6);
+      background-color: #edeaea;
+      padding: 15px;
+      display: block;
+      margin: 20px auto; 
+      width: 80%;
+      text-align: left;
+    }
+    a {
+      color: blue;
+      margin: 0 5px;
+      justify-content: center; 
+      align-items: center; 
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  body {
+  font-family: Arial;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+#second form {
+  background: #ffffff;
+  padding: 20px;
+  border: 1px solid #000000;
+  max-width: 500px;
+  margin: auto;
+  border-radius:8px;
+}
+
+#second table {
+  border-collapse: collapse;
+  width: 100% ;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#second td {
+  padding: 10px;
+  vertical-align: top;
+  border-bottom:1px solid #dddddd;
+}
+
+  </style>
+</head>
+
+<body>
+  <h1>Task 1</h1>
+  
+  <table id="first">
+    <tr>
+      <th>FirstName</th>
+      <th>LastName</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>80</td>
+    </tr>
+  </table>
+  <h1>Task 2</h1>
+  <div class="box">
+     <p>List can be nested(list inside list):</p>
+     <ul>
+       <li>Coffee</li>
+       <li>Tea
+          <ul>
+            <li>Black Tea</li>
+            <li>Green Tea</li>
+          </ul>
+       </li>
+       <li>Milk</li>
+      </ul>
+  </div>
+       <div class="link-box">
+        <p>Click any of the following links</p>
+        <a href="https://example.com" target="_blank">Opens in New</a> |
+        <a href="https://example.com" target="_self">Opens in Self</a> |
+        <a href="https://example.com" target="_parent">Opens in parent</a> |
+        <a href="https://example.com" target="body">Opens in Body</a>
+   </div>
+<h1>Task 3</h1>
+<h3>Registration Form</h3>
+  <div id="second">
+  <form>
+     <table>
+        <tr>
+          <td>First Name</td>
+          <td><input type="text" name="firstname" required></td>
+        </tr>
+        <tr>
+          <td>Last Name</td>
+          <td><input type="name" name="lastname" required></td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td><input typr="email" name="email" required></td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td><input type="password" name="password" required></td>
+        </tr>
+        <tr>
+          <td>Re-Enter Password</td>
+          <td><input type="password" name="repassword"></td>
+        </tr>
+        <tr>
+          <td>Gender:</td>
+          <td>
+          <input type="radio" name="gender" value="female">Female
+          <input type="radio" name="gender" value="male">Male
+        </td>
+        </tr>
+        <tr>
+          <td>Age:</td>
+          <td><input type="number" name="age" min="0" required></td>
+        </tr>
+       <tr>
+        <td>Phone Number</td>
+        <td><input type="tel" name="phone" required></td>
+       </tr>
+       <tr>
+        <td>Address</td>
+        <td><textarea name="address" rows="4" cols="30" required></textarea></td>
+       </tr>
+       <tr>
+        <td>State</td>
+        <td><input type="text" name="state"></td>
+       </tr>
+       <tr>
+        <td>Country</td>
+        <td>
+          <select name="country" required>
+            <option value="">Choose your country</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Australia">Australia</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Languages known</td>
+        <td>
+          <input type="checkbox" name="lang" value="English"> English
+          <input type="checkbox" name="lang" value="Kannada"> Kannada
+          <input type="checkbox" name="lang" value="Hindi"> Hindi
+          <input type="checkbox" name="lang" value="Telugu"> Telugu
+        </td>
+      </tr>
+      <tr>
+        <td colspan="5"><input type="checkbox" checked>Hereby I declare all the given details are true</td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <a href="#">Log in to <span style="color: purple;">Acharya</span> website</a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: center;">
+          <input type="submit" value="Register">
+        </td>
+      </tr>
+     </table>
+  </form>
+</div>
+
+
+</body>
+</html>
