@@ -1,0 +1,298 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.title {
+  color: #3b63c4;
+  font-size: 2.5em;
+}
+
+.styled-table {
+  background-color: #a6d6d7;
+  padding: 10px;
+  border-radius: 15px;
+  display: inline-block;
+
+}
+.rounded-table {
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+
+.rounded-table th,
+.rounded-table td {
+  padding: 10px 15px;
+  background-color: #a6d6d7;
+  border: 1px solid black;
+  border-radius: 15px;
+  text-align: left;
+  font-weight: bold;
+}
+.shape-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 20px;
+}
+.shape {
+  width: 80px;
+  height: 50px;
+  border: 2px solid #99cc00;
+}
+
+.rectangle {
+  border-radius: 7px;
+}
+
+.rounded-rectangle {
+  border-radius: 12px;
+}
+
+.oval {
+  border-radius: 50%;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #4a6cd4;
+}
+
+.vertical-nav {
+  width: 200px;
+  background-color: lightblue;
+  border: 2px solid black;
+}
+
+.vertical-nav a {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  color: blue;
+  font-size: 18px;
+}
+
+.vertical-nav a.active {
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+}
+
+.horizontal-nav {
+  display: flex;
+  background-color: lightgray;
+  border: 2px solid black;
+  width: fit-content;
+}
+
+.horizontal-nav a {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: blue;
+  border-right: 1px solid blue;
+  font-size: 18px;
+}
+
+.horizontal-nav a:last-child {
+  border-right: none;
+}
+
+.horizontal-nav a.active {
+  background-color: gray;
+  color: white;
+  font-weight: bold;
+}
+.data-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.data-table th {
+  background-color: #00a651;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+.data-table td {
+  padding: 12px;
+}
+.sidenav {
+  height: 100%;
+  width: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  padding-top: 100px;
+}
+
+.sidenav-btn {
+  padding: 15px 0;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  width: 60px;
+  transition: 0.3s;
+  text-align: center;
+  border-radius: 0 5px 5px 0;
+  overflow: hidden;
+}
+
+.green { background-color: #04AA6D; }
+.blue  { background-color: #2196F3; }
+.red   { background-color: #f44336; }
+.gray  { background-color: #555; }
+
+
+.sidenav-btn:hover {
+  width: 180px;
+  color: white;
+  padding-left: 20px;
+}
+
+
+.main-content {
+  margin-left: 70px;
+  padding: 20px;
+  border: 1px solid black;
+}
+.login-container {
+  width: 300px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  padding: 16px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.avatar-container {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.avatar {
+  width: 100px;
+  border-radius: 50%;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.login-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  margin-top: 8px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.login-btn:hover {
+  opacity: 0.9;
+}
+
+.cancel-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  padding: 10px;
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  border-radius: 0 0 8px 8px;
+}
+
+.psw a {
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+.psw a:hover {
+  text-decoration: underline;
+}
+.third body {
+  background-color: #dede55;
+  font-family: Georgia, serif;
+  margin: 40px;
+}
+
+.container {
+  display: flex;
+  max-width: 600px;
+  background-color: #dede55;
+  padding: 20px;
+  border: 1px dotted gray;
+}
+
+.sidebar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 20px;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  background-color: white;
+  border-left: 10px solid black;
+  display: block;
+  padding: 4px;
+  width: 100px;
+  text-decoration: none;
+  color: black;
+}
+
+.content h1 {
+  color: purple;
+  margin-top: 0;
+}
+
+.content p {
+  line-height: 1.5;
+  max-width: 400px;
+}
+
+hr {
+  border: none;
+  border-top: 1px dotted gray;
+  margin: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
